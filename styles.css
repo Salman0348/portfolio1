@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar{
+    background-color: gainsboro;
+    height: 100vh;
+    width: 220px;
+    position: fixed;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    transition: transform 0.3s ease-in;
+}
+.sidebarGo{
+    transform: translate(-220px);
+}
+.sidebar a{
+    text-decoration: none;
+    color:black;
+}
+
+.sidebar a:active {
+    color: #daa520;
+}
+
+
+.cv a{
+    display: flex;
+    width:50px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 70px;
+}
+.main{
+    width: 82vw;
+    padding: 12vh 0vw 0 14vw;
+    /* background-color: yellow; */
+}
+.main .menu{
+    position: fixed;
+    left: 15px;
+    top: 10px;
+}
+.cross{
+    position: fixed;
+    left: 180px;
+    top: 0px;
+}
+
+.infoContainer{
+    /* background-color: aqua; */
+    height: 40vh;
+    width:80vw;
+    /* padding: 11vh 0px 0 14vw; */
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container{
+    display: flex;
+}
+
+.sidebar li{
+    list-style: none;
+    margin: 4vh 0;
+    padding:1vh 0;
+    border-bottom: 1px solid #daa520;
+    cursor:pointer;
+}
+.sidebar nav{
+    padding: 9vh 5vh;
+}
+.devInfo{
+    width:60%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.devInfo div{
+    padding: 2px 0;
+}
+.btn{
+    margin: 10px 3px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #34d5df;
+    font-family: "Source Code Pro", monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #d4f3f5;
+    color:#1a7376;
+}
+
+.greetings{
+    font-family: "Source Code Pro", monospace;
+    font-size: 25px;
+}
+.name{
+    font-family: "Source Code Pro", monospace;
+    font-size: 40px;
+    font-weight: bold;
+}
+.skills{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 24px;
+}
+.aboutMe{
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 18px;
+}
+
+.infoContainer img{
+    /* height: 40vh ; */
+    width: 16vw;
+    max-height: 16vw;
+}
+.infoContainer .picture{
+    display: flex;
+    align-items: center;
+
+}
+
+
+/*contact */
+.formContainer {
+    margin: 0 5vw;
+}
+#formTitle{
+    font-family: "Source Code Pro", monospace;
+    margin-bottom: 30px;
+}
+form{
+    font-family: "Ubuntu", sans-serif;
+}
+.formContainer .input{
+    display: flex;
+    flex-direction:column;
+    width: 30vw;
+    margin: 15px 0;
+}
+.formContainer #phone, #clientEmail, #clientName, #textarea{
+    margin: 6px 0;
+    padding: 3px;
+}
+.formContainer .form-check{
+    flex-direction: row;
+    align-items: center;
+}
+.formContainer #check{
+   margin-right: 15px;
+}
+.formContainer #emailHelp{
+    font-size: 12px;
+    color:rgb(18, 18, 167);
+    padding-left: 10px;
+}
+input#clientName{
+    margin-bottom: 0;
+}
+.btn-sm{
+    margin: 10px 0;
+    padding: 3px 8px;
+    border-radius: 15px;
+}
+
+/*intro css*/
+.introContainer{
+    margin: 6vh 0vw 0 6vw;
+    font-family: "Source Code Pro", monospace;
+}
+.introContainer .uprIntroPgf{
+    margin: 20px 0;
+}
+.skillsTitle{
+    margin: 5px 0 20px 0;
+}
+/* .introContainer .uprIntroTitle{
+    font-family: "Ubuntu", sans-serif;
+} */
+.skillsContainer{
+    font-family: "Source Code Pro", monospace;
+    width: 34vw;
+    box-sizing: border-box;
+
+}
+.skillProficiency .indSkill{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.skillProficiency .proficiencyBar{
+    width: 27vw;
+    height: 13px;
+    background-color:#34d5df;
+    /* border-radius:15px; */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.skillProficiency .innerPrfBar{
+    height: 13px;
+    background-color:#3445df;
+}
+.hundred .innerPrfBar{
+    width: 27vw;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.ninety .innerPrfBar{
+    width:24.3vw;
+}
+.eighty .innerPrfBar{
+    width:21.6vw;
+}
+
+/*projects css*/
+.projectsContainer{
+    margin-left: 5vw;
+    margin-top: -5vh;
+    font-family: "Ubuntu", sans-serif;
+
+}
+.prjImg img{
+    width: 100%;
+}
+.innerPrjsContainer{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: -32px;
+}
+.indPrj{
+    background-color: #eed9bd;
+    min-width: 28%;
+    max-width: 270px;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    border-radius: 5px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in;
+
+}
+.indPrj:hover{
+    background-color: #e6d1b8;
+    transform: scale(1.3);
+}
+/* .indPrj .prjTitle{
+     margin: 10px 0 0 -9px;
+    
+} */
+.projectsContainerTitle{
+    margin-left: -8px;
+    
+} 
+.projectsContainer h1,h2{
+    font-family: "Roboto Slab", serif;
+}
+.indPrj .prjLink{
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+/*resposive home*/
+
+@media screen and (max-width:690px) {
+    .infoContainer{
+        margin: 0vh auto;
+        flex-direction: column;
+        height: 100%;
+    }
+    .devInfo{
+        width: 100%;
+    }
+    .infoContainer .picture{
+        order: -1;
+        margin: 0 0 26px 3px;
+    }
+     /*contact page*/
+     .formContainer .input{
+        width: 64vw;
+        margin: 15px 8px;
+    }
+    #formTitle{
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .main {
+        padding: 5vh 0vw 0 14vw;
+    }
+     .infoContainer{
+        align-items: center;
+    }
+    .devInfo{
+        font-size: 20px;
+        /* align-items: center; */
+    }
+    .greetings{
+        font-size: 1em;
+    }
+    .name{
+        font-size: 1.5em;
+    }
+    .skills{
+        font-size: 1.2em;
+        color: #7704f4;
+        margin-top: 10px;
+    }
+    .aboutMe{
+        margin:30px 0 15px;
+        width: 269px;
+    }
+    
+    .infoContainer img{
+        max-height: 43vh;
+        margin-left: -53px;
+        width: 44vw;
+    }
+    .devInfo .btn{
+        
+    margin: 11px 2px 0;
+    }
+
+    /*intro page*/
+    .skillsContainer .skillProficiency{
+        width: 43vw;
+    }
+    .introContainer{
+        margin: 2vh 0vw 0 6vw;
+    }
+
+    /*projects page*/
+    .projectsContainer{
+        margin-left:0;
+        margin-top: -3vh;
+    }
+    .indPrj:hover{
+        transform: none;
+    }
+    .projectsContainerTitle {
+        margin-left: 7px;
+        margin-top: 32px;
+    }
+    /*contact page*/
+    .formContainer .input{
+        width: 65vw;
+        padding-left: 7px;
+    }
+    form{
+       margin-left: -21px;
+       font-size: 21px;
+    }
+    #formTitle{
+        font-size: 23px;
+        margin-left: -10px;
+        margin-top: 5px;
+    }
+    .btn-sm {
+        margin: 10px 0 0 16px;
+    }
+}
+@media screen and ((min-width:610px)and (max-width:690px)) {
+    .infoContainer .picture{
+        margin: 0 0 -50px 277px;
+    }
+
+}
+@media screen and (max-width:320px) {
+    .main .menu{
+        background-color:rgb(116 133 185);
+        padding: 3px 8px;
+        border-radius: 5px;
+    }
+}

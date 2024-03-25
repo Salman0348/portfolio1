@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman | Web Developer and Computer Science student</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="/images/favIcon.png"/>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar sidebarGo">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="intro.html">My Intro</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="cv">
+              <a href="Salman-Ud-Din-Frontend-Developer.pdf" target="_blank"><img src="images/cvIcon1.png" alt="cv">CV</button></a>
+            </div>
+        </aside>
+        <div class="main">
+          <div class="menu">
+            <div class="burger"><img src="/images/burgerIcon.png" alt="menu"  width="26px"></div>
+            <div class="cross"><img src="/images/crossIcon.png" alt="menu" width="35px"></div>
+          </div>
+            <div class="formContainer">
+                <h1 id="formTitle">Contact me for work/general Enquiries</h1>
+                <form action="">
+                    <div class="input">
+                      <label for="clientName" class="form-label">Name</label>
+                      <input type="name"  id="clientName"  required>
+                    </div>
+                    <div class="input">
+                      <label for="clientEmail" class="form-label">Email address</label>
+                      <input type="email"  id="clientEmail" aria-describedby="emailHelp" required>
+                      <div id="emailHelp" >We'll never share your email & phone number with anyone else.</div>
+                    </div>
+                    <div class="input">
+                      <label for="phone" class="form-label">Phone</label>
+                      <input type="phone"  id="phone">
+                    </div>
+                    <div class="input">
+                        <label  for="textarea">Write your Enquiry</label>
+                        <textarea type="textarea"  id="textarea" rows="3" ></textarea>
+                    </div>
+                    <div class="input form-check">
+                      <input type="checkbox"  id="check">
+                      <label class="form-check-label" for="check">Are you interested to work with me?</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-sm">Submit</button>
+                  </form>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
